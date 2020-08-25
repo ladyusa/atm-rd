@@ -5,7 +5,7 @@ public class CustomerMain {
         Customer peter = new Customer(1,"Peter","1234");
         Customer nancy = new Customer(2,"Nancy","2345");
 
-        Bank bank = new Bank("My Bank");
+        Bank bank = new Bank("My Bank", new WebServiceDatasource());
         bank.addCustomer(peter);
         bank.addCustomer(nancy);
         System.out.println(bank);
