@@ -8,6 +8,7 @@ public class CustomerMain {
         Bank bank = new Bank("My Bank");
         bank.addCustomer(peter);
         bank.addCustomer(nancy);
+        System.out.println(bank);
 
         ATM atm = new ATM(bank);
         atm.validateCustomer(1,"1234");
